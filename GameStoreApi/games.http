@@ -1,0 +1,34 @@
+GET http://localhost:5092/games
+
+###
+
+GET http://localhost:5092/games/1
+
+###
+
+POST  http://localhost:5092/games
+Content-Type: application/json
+
+
+{
+  
+  "name": "Fnnfefnf",
+  
+  "price": 35,
+  "releaseDate": "2001-01-01"
+}
+###
+
+PUT  http://localhost:5092/games/3
+Content-Type: application/json
+
+{
+    "name": "The Last of Us",
+    "genre": "Survivor",
+    "price": 129.99,
+    "releaseDate": "2005-09-07"
+  }
+
+###
+
+DELETE http://localhost:5092/games/1
